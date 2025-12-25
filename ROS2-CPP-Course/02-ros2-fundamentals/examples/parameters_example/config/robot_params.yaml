@@ -1,0 +1,11 @@
+# Sample parameter configuration file for configurable_robot node
+# Usage: ros2 run parameters_example configurable_robot --ros-args --params-file config/robot_params.yaml
+
+configurable_robot:
+  ros__parameters:
+    robot_name: "RobotBeta"
+    max_speed: 2.5
+    max_acceleration: 1.0
+    wheel_diameter: 0.15
+    publish_rate: 2.0
+    enable_safety: true
