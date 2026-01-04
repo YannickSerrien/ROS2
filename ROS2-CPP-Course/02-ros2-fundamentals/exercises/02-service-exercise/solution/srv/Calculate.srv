@@ -1,0 +1,14 @@
+# Service definition for calculator
+# Request: two numbers and an operation
+
+float64 a
+float64 b
+string operation  # "add", "subtract", "multiply", "divide"
+
+---
+
+# Response: result and status
+
+float64 result
+bool success
+string message

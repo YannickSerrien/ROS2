@@ -1,0 +1,9 @@
+string room_name  # Empty string for all rooms
+---
+bool success
+string[] rooms
+float64[] avg_temperatures
+float64[] min_temperatures
+float64[] max_temperatures
+int32[] sample_counts
+string message

@@ -1,0 +1,6 @@
+robot_sim:
+  ros__parameters:
+    robot_name: "ConfiguredRobot"
+    max_speed: 2.0
+    operating_mode: "auto"
+    enable_sensors: true

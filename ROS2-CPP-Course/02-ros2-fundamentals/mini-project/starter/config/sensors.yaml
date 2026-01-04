@@ -1,0 +1,26 @@
+temp_sensor_living_room:
+  ros__parameters:
+    room_name: "Living Room"
+    sensor_id: "SENSOR_LR_01"
+    base_temperature: 22.0
+    temperature_variance: 3.0
+    humidity_base: 50.0
+    publish_rate: 1.0
+
+temp_sensor_bedroom:
+  ros__parameters:
+    room_name: "Bedroom"
+    sensor_id: "SENSOR_BR_01"
+    base_temperature: 20.0
+    temperature_variance: 2.0
+    humidity_base: 45.0
+    publish_rate: 1.0
+
+temp_sensor_kitchen:
+  ros__parameters:
+    room_name: "Kitchen"
+    sensor_id: "SENSOR_KT_01"
+    base_temperature: 24.0
+    temperature_variance: 5.0
+    humidity_base: 60.0
+    publish_rate: 1.0

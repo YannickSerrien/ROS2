@@ -378,8 +378,14 @@ Test your installation with these commands:
 
 ### 1. Check ROS2 Version
 ```bash
-ros2 --version
+ros2 pkg xml ros2cli --tag version
 # Expected: ros2 cli version: 0.X.X
+
+printenv ROS_DISTRO
+# Expected: humble
+
+ros2 doctor
+# Expected: All 5 checks passed
 ```
 
 ### 2. Run Demo Nodes

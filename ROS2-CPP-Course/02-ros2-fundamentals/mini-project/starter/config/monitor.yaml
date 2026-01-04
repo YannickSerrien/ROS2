@@ -1,0 +1,14 @@
+temp_monitor:
+  ros__parameters:
+    high_threshold: 25.0
+    low_threshold: 15.0
+    critical_threshold: 30.0
+
+alerter:
+  ros__parameters:
+    log_file: ""  # Leave empty for no file logging
+    enable_sound: false
+
+dashboard:
+  ros__parameters:
+    update_interval: 5.0
