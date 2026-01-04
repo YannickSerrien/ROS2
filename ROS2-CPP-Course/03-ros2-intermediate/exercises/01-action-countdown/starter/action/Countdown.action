@@ -1,0 +1,10 @@
+# Goal: Duration of countdown in seconds
+int32 duration
+---
+# Result: Whether countdown completed successfully
+bool completed
+string message
+int32 elapsed_time
+---
+# Feedback: Time remaining in seconds
+int32 time_remaining

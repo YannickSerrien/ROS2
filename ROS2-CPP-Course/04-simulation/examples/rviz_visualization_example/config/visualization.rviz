@@ -1,0 +1,49 @@
+Panels:
+  - Class: rviz_common/Displays
+
+Visualization Manager:
+  Global Options:
+    Fixed Frame: world
+    Frame Rate: 30
+
+  Displays:
+    - Class: rviz_common/Group
+      Name: Markers
+      Displays:
+        - Class: rviz_default_plugins/MarkerArray
+          Name: MarkerArray
+          Topic: /visualization_marker_array
+          Queue Size: 100
+
+        - Class: rviz_default_plugins/Marker
+          Name: Trajectory
+          Topic: /trajectory_marker
+          Queue Size: 100
+
+    - Class: rviz_common/Group
+      Name: Path
+      Displays:
+        - Class: rviz_default_plugins/Path
+          Name: Planned Path
+          Topic: /planned_path
+          Color: 255; 255; 0
+          Alpha: 1.0
+
+    - Class: rviz_common/Group
+      Name: Interactive
+      Displays:
+        - Class: rviz_default_plugins/InteractiveMarkers
+          Name: Goal Marker
+          Update Topic: /goal_markers/update
+          Show Visual Aids: true
+
+Views:
+  Current:
+    Class: rviz_default_plugins/Orbit
+    Distance: 12.0
+    Focal Point:
+      X: 0
+      Y: 0
+      Z: 0
+    Pitch: 0.785
+    Yaw: 0.785

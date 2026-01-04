@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+Main robot XACRO file
+Demonstrates modular XACRO organization with properties and macros
+-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="xacro_robot">
+
+  <!-- Include property and macro files -->
+  <xacro:include filename="$(find urdf_robot_example)/urdf/properties.xacro"/>
+  <xacro:include filename="$(find urdf_robot_example)/urdf/macros.xacro"/>
+
+  <!-- Base Link (chassis) -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+      <material name="robot_blue">
+        <color rgba="${robot_blue}"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${base_length} ${base_width} ${base_height}"/>
+      </geometry>
+    </collision>
+
+    <xacro:box_inertia m="${base_mass}" x="${base_length}" y="${base_width}" z="${base_height}"/>
+  </link>
+
+  <!-- Use wheel macro for left and right wheels -->
+  <xacro:wheel prefix="left" reflect="1"/>
+  <xacro:wheel prefix="right" reflect="-1"/>
+
+  <!-- Caster Wheel -->
+  <link name="caster">
+    <visual>
+      <geometry>
+        <sphere radius="${caster_radius}"/>
+      </geometry>
+      <material name="caster_grey">
+        <color rgba="${caster_grey}"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <sphere radius="${caster_radius}"/>
+      </geometry>
+    </collision>
+
+    <xacro:sphere_inertia m="${caster_mass}" r="${caster_radius}"/>
+  </link>
+
+  <!-- Caster Joint -->
+  <joint name="caster_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="caster"/>
+    <origin xyz="${-base_length/2 + caster_radius} 0 ${-caster_radius}" rpy="0 0 0"/>
+  </joint>
+
+</robot>

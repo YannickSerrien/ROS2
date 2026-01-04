@@ -169,13 +169,13 @@ colcon test-result --verbose
 
 | Option | Description | Example |
 |--------|-------------|---------|
-| `--symlink-install` | Use symlinks (no rebuild for Python/launch files) | `colcon build --symlink-install` |
-| `--packages-select` | Build specific packages | `colcon build --packages-select pkg1 pkg2` |
+| `--symlink-install` | Use symlinks (no rebuild for Python/launch files) when chaning a file you do not need to run colcon build and rebuild the entirity (taking minutes per change) instead of rerunning just the changed node. | `colcon build --symlink-install` |
+| `--packages-select` | Build specific packages (usefull when only altering one section (ex. robot with camera, motor etc. You don't want to run everything when just changing camera package)) | `colcon build --packages-select pkg1 pkg2` |
 | `--packages-ignore` | Skip packages | `colcon build --packages-ignore pkg_broken` |
 | `--packages-up-to` | Build package and dependencies | `colcon build --packages-up-to my_pkg` |
 | `--cmake-args` | Pass arguments to CMake | `colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release` |
-| `--parallel-workers N` | Limit parallel jobs | `colcon build --parallel-workers 4` |
-| `--event-handlers` | Show detailed output | `colcon build --event-handlers console_direct+` |
+| `--parallel-workers N` | Limit parallel jobs and give certain limits to not freeze entire laptop | `colcon build --parallel-workers 4` |
+| `--event-handlers` | Show detailed output (for debugging) | `colcon build --event-handlers console_direct+` |
 
 ---
 
@@ -247,13 +247,13 @@ rosdep install --from-paths src --ignore-src -y
 - Sets up ROS2 environment variables
 - Enables package discovery
 
-### How to Source
+### How to Source (showing the order of operations/overlay) (Shows that the foundation is humble (ROS2) and the top layer being your project)
 
 ```bash
-# Source ROS2 installation (always first!)
+# (Layer 1/bottom) Source ROS2 installation (always first!)
 source /opt/ros/humble/setup.bash
 
-# Then source your workspace
+# (Layer 2/top) Then source your workspace
 source ~/ros2_ws/install/setup.bash
 
 # Or in one line
@@ -273,7 +273,7 @@ source install/setup.zsh
 source install/setup.fish
 ```
 
-### Auto-Sourcing (Convenient)
+### Auto-Sourcing (Convenient) (automates the process so you don't have to type source... every time you open a new window)
 
 Add to `~/.bashrc`:
 

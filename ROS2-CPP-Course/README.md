@@ -2,6 +2,27 @@
 
 A comprehensive, hands-on course for learning ROS2 (Robot Operating System 2) and modern C++ from fundamentals to advanced topics. Designed for experienced Python developers transitioning to robotics with C++.
 
+## Table of Contents
+
+- [Course Overview](#course-overview)
+- [Who This Course Is For](#who-this-course-is-for)
+- [Prerequisites](#prerequisites)
+- [What You'll Learn](#what-youll-learn)
+- [Course Structure](#course-structure)
+- [Learning Paths](#learning-paths)
+- [How to Use This Course](#how-to-use-this-course)
+- [Projects Philosophy](#projects-philosophy)
+- [Course Features](#course-features)
+- [Setup Requirements](#setup-requirements)
+- [Estimated Timeline](#estimated-timeline)
+- [Success Criteria](#success-criteria)
+- [Course Standards](#course-standards)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Additional Resources](#additional-resources)
+- [License](#license)
+- [Quick Start](#quick-start)
+
 ## Course Overview
 
 This course takes you on a complete journey from C++ refresher to building production-ready robotic systems. Through structured lessons, practical code examples, hands-on exercises, and real-world projects, you'll gain the skills needed to develop professional robotics applications.

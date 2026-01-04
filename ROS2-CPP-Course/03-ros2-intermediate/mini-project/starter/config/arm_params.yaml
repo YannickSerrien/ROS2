@@ -1,0 +1,31 @@
+# Robot arm configuration parameters
+
+arm_controller:
+  ros__parameters:
+    # Arm dimensions (meters)
+    link1_length: 1.0
+    link2_length: 0.8
+
+    # Joint limits (radians)
+    joint1_min: -3.14159  # -180 degrees
+    joint1_max: 3.14159   # +180 degrees
+    joint2_min: -3.14159
+    joint2_max: 3.14159
+
+    # Initial joint positions
+    initial_joint1: 0.785  # 45 degrees
+    initial_joint2: 0.0
+
+    # Control parameters
+    publish_rate: 50.0  # Hz for TF updates
+
+move_arm_server:
+  ros__parameters:
+    # Motion parameters
+    motion_duration: 3.0  # seconds for movement
+    feedback_rate: 10.0   # Hz for progress updates
+    use_elbow_up: true    # Prefer elbow-up IK solution
+
+    # Workspace limits
+    max_reach: 1.8        # Maximum reach (meters)
+    min_reach: 0.2        # Minimum reach (meters)

@@ -1,5 +1,40 @@
 # Module 2: ROS2 Fundamentals
 
+## Table of Contents
+
+- [📊 Visual Summary (Complete Overview Diagram)](#-visual-summary-complete-overview-diagram)
+- [Module Overview](#module-overview)
+- [Module Position in Learning Journey](#module-position-in-learning-journey)
+- [What You'll Learn (Conceptual Overview)](#what-youll-learn-conceptual-overview)
+- [Learning Objectives](#learning-objectives)
+- [Prerequisites](#prerequisites)
+- [Module Structure](#module-structure)
+- [Connection to Previous Modules](#connection-to-previous-modules)
+- [Connection to Next Modules](#connection-to-next-modules)
+- [Conceptual Bridges](#conceptual-bridges)
+- [Critical Concepts to Master](#critical-concepts-to-master)
+- [Common Questions](#common-questions)
+- [Module Checklist](#module-checklist)
+- [Verification Questions](#verification-questions)
+- [What's Next?](#whats-next)
+- [Estimated Time](#estimated-time)
+
+## 📊 Visual Summary (Complete Overview Diagram)
+
+**[→ View Complete Visual Summary with Comprehensive Diagrams](VISUAL_SUMMARY.md)**
+
+This visual guide contains:
+- Complete ROS2 architecture overview with all 8 core concepts
+- Communication patterns decision tree
+- Typical node structure anatomy
+- QoS settings explained visually
+- Code patterns quick reference
+- Development workflow diagram
+
+**Perfect for:** Quick reference, revision, understanding relationships between concepts
+
+---
+
 ## Module Overview
 
 This module teaches the **core concepts of ROS2**: nodes, topics, services, parameters, and basic communication patterns. You'll learn the building blocks that every ROS2 application uses, from sensor interfaces to robot controllers.

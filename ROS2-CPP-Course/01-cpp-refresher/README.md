@@ -2,6 +2,33 @@
 
 Welcome to the C++ Refresher module! This module bridges your Python experience with modern C++ programming, focusing on features essential for ROS2 development.
 
+## Table of Contents
+
+- [Module Position in Learning Journey](#module-position-in-learning-journey)
+- [What You'll Learn (Conceptual Overview)](#what-youll-learn-conceptual-overview)
+- [Module Overview](#module-overview)
+- [Conceptual Breakdown](#conceptual-breakdown)
+- [Learning Objectives](#learning-objectives)
+- [Prerequisites](#prerequisites)
+- [Module Structure](#module-structure)
+- [Code Examples](#code-examples-examples)
+- [Exercises](#exercises-exercises)
+- [Mini-Project: Sensor Data Handler](#mini-project-sensor-data-handler)
+- [Connection to Previous Module](#connection-to-previous-module)
+- [Connection to Next Module](#connection-to-next-module)
+- [Conceptual Bridges](#conceptual-bridges)
+- [Study Tips](#study-tips)
+- [Key Differences from Python](#key-differences-from-python)
+- [Important Concepts for ROS2](#important-concepts-for-ros2)
+- [Quick Reference](#quick-reference)
+- [Critical Concepts to Master](#critical-concepts-to-master)
+- [Module Checklist](#module-checklist)
+- [Common Questions](#common-questions)
+- [Verification Questions](#verification-questions)
+- [Estimated Time](#estimated-time)
+- [Resources](#resources)
+- [What's Next?](#whats-next)
+
 ## Module Position in Learning Journey
 
 ```mermaid

@@ -1,0 +1,13 @@
+# Parameter configuration for launch_example
+# Load with: ros2 launch launch_example advanced.launch.py use_config:=true
+
+data_processor:
+  ros__parameters:
+    window_size: 25
+    warning_threshold: 26.5
+
+hvac_controller:
+  ros__parameters:
+    target_temp: 23.0
+    tolerance: 2.0
+    max_power: 90.0

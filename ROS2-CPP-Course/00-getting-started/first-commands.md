@@ -30,9 +30,6 @@ ros2 <command> --help
 # Example:
 ros2 node --help
 
-# Get ROS2 version
-ros2 --version
-
 # List all available commands
 ros2
 ```

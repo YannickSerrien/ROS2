@@ -2,6 +2,28 @@
 
 Welcome to the ROS2 and C++ course! This module will help you set up your development environment and get familiar with the essential tools and commands you'll use throughout the course.
 
+## Table of Contents
+
+- [Module Position in Learning Journey](#module-position-in-learning-journey)
+- [What You'll Learn (Conceptual Overview)](#what-youll-learn-conceptual-overview)
+- [Learning Objectives](#learning-objectives)
+- [Module Structure](#module-structure)
+- [Prerequisites](#prerequisites)
+- [Connection to Previous Modules](#connection-to-previous-modules)
+- [Connection to Next Modules](#connection-to-next-modules)
+- [Conceptual Bridges](#conceptual-bridges)
+- [Critical Concepts to Master](#critical-concepts-to-master)
+- [Getting Started Checklist](#getting-started-checklist)
+- [Verification Tests](#verification-tests)
+- [Common Questions](#common-questions)
+- [Common Issues and Solutions](#common-issues-and-solutions)
+- [Verification Questions](#verification-questions)
+- [Recommended Installation Path](#recommended-installation-path)
+- [Time Estimate](#time-estimate)
+- [What's Next?](#whats-next)
+- [Additional Resources](#additional-resources)
+- [Tips for Success](#tips-for-success)
+
 ## Module Position in Learning Journey
 
 ```mermaid
@@ -332,7 +354,7 @@ graph LR
 ## How All Setup Components Work Together
 
 ```mermaid
-graph TB
+graph LR
     subgraph "Development Session Flow"
         TERMINAL[Open Terminal]
         SOURCE_BASE[Source ROS2<br/>source /opt/ros/humble/setup.bash]

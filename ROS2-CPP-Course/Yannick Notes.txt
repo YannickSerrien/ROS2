@@ -1,0 +1,19 @@
+Working with ROS2:
+step 1: start workplace (00-getting-started/ros2-workspace-guide.md)
+    Includes: - Colcon Build/commands/and what it Includes
+              - Build debugging
+
+              best practiche workflow:
+                    # 1. Create the package (SAME)
+                    cd ~/ros2_ws/src
+                    ros2 pkg create --build-type ament_python my_py_package --dependencies rclpy
+
+                    # 2. Go back (SAME)
+                    cd ~/ros2_ws
+
+                    # 3. Build with the Magic Flag (CHANGED)
+                    # Instead of just 'colcon build', use this:
+                    colcon build --symlink-install
+
+                    # 4. Source (SAME)
+                    source install/setup.bash

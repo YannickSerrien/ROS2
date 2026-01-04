@@ -1,0 +1,37 @@
+Panels:
+  - Class: rviz_common/Displays
+
+Visualization Manager:
+  Global Options:
+    Fixed Frame: base_link
+    Frame Rate: 30
+
+  Displays:
+    - Class: rviz_default_plugins/RobotModel
+      Name: RobotModel
+      Description Topic: /robot_description
+      Visual Enabled: true
+      Collision Enabled: false
+
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Show Names: true
+      Show Axes: true
+      Marker Scale: 0.3
+
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Cell Size: 0.5
+      Color: 160; 160; 160
+      Plane: XY
+
+Views:
+  Current:
+    Class: rviz_default_plugins/Orbit
+    Distance: 2.0
+    Focal Point:
+      X: 0
+      Y: 0
+      Z: 0
+    Pitch: 0.5
+    Yaw: 0.5

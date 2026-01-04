@@ -1,0 +1,15 @@
+# Goal: Target end-effector position in world frame
+float64 target_x
+float64 target_y
+---
+# Result: Success status and final position
+bool success
+string message
+float64 final_x
+float64 final_y
+float64 final_theta
+---
+# Feedback: Current position and progress
+float64 current_x
+float64 current_y
+float64 percent_complete

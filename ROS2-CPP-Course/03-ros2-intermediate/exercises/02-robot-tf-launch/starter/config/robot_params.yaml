@@ -1,0 +1,21 @@
+# Robot sensor configuration parameters
+
+static_tf_node:
+  ros__parameters:
+    # Camera position and orientation
+    camera_x: 0.3
+    camera_y: 0.0
+    camera_z: 0.4
+    camera_roll: 0.0
+    camera_pitch: -0.349  # -20 degrees
+    camera_yaw: 0.0
+
+    # Lidar position
+    lidar_x: 0.2
+    lidar_y: 0.0
+    lidar_z: 0.15
+
+    # IMU position
+    imu_x: 0.0
+    imu_y: 0.0
+    imu_z: 0.05

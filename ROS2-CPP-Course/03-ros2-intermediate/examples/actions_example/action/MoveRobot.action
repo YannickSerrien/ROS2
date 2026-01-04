@@ -1,0 +1,20 @@
+# Goal: Move robot to target position
+float64 target_x
+float64 target_y
+float64 target_theta
+float64 speed  # Movement speed (m/s)
+---
+# Result: Final position and success status
+bool success
+string message
+float64 final_x
+float64 final_y
+float64 final_theta
+float64 total_distance
+---
+# Feedback: Current position and progress
+float64 current_x
+float64 current_y
+float64 current_theta
+float64 distance_remaining
+float64 percent_complete
